@@ -1,9 +1,7 @@
 import React from 'react';
 
-const App = () => {
-  return (
-    <>Template frontend</>
-  );
-}
+const App = () => (
+  <>Template frontend</>
+);
 
 export default App;
