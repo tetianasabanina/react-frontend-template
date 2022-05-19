@@ -1,9 +1,13 @@
 import React from 'react';
-import { Grid, Typography } from '@material-ui/core';
+
+import { Grid } from '@material-ui/core';
+import Movies from './movies/MovieList';
+import './pages.css';
 
 const FirstPage = () => (
-  <Grid container>
-    <Typography>You are on the 1st component!</Typography>
+  <Grid container className="container">
+    <Grid className="title">Children&apos;s cartoons</Grid>
+    <Movies />
   </Grid>
 );
 
