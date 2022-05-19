@@ -6,7 +6,7 @@ import './footer.css';
 
 const Footer = () => (
   <Grid className="footer">
-    <Typography>This is some content in sticky footer</Typography>
+    <Typography>A basic application that displays a list of movies as a list of cards.</Typography>
   </Grid>
 );
 

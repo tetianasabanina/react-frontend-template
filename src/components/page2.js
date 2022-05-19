@@ -1,9 +1,10 @@
 import React from 'react';
 import { Grid, Typography } from '@material-ui/core';
+import './pages.css';
 
 const SecondPage = () => (
-  <Grid container>
-    <Typography>You are on the 2nd component!</Typography>
+  <Grid container className="container">
+    <Typography>The page is under the construction</Typography>
   </Grid>
 );
 

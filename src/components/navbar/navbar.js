@@ -34,14 +34,22 @@ const Navbar = () => {
 
   const classes = useStyles();
 
+  const firstLink = 'Movies';
+  const secondLink = 'Coming soon';
+  const thirdLink = 'Coming soon';
+
   return (
     <Grid container style={{ marginTop: '68px' }}>
       <AppBar color="primary">
         <Toolbar>
-          <Typography style={{ color: '#FFF' }}>Logo</Typography>
+          <Typography style={{ color: '#FFF' }}>Fun App</Typography>
 
           {isMatch ? (
-            <DrawerComponent />
+            <DrawerComponent 
+              firstLink={firstLink}
+              secondLink={secondLink}
+              thirdLink={thirdLink}
+            />
           ) : (
             <Tabs
               indicatorColor="secondary"
@@ -49,9 +57,9 @@ const Navbar = () => {
               onChange={handleClickTab}
               className={classes.tabMargin}
             >
-              <Tab label="Page 1" disableRipple to="/" component={Link} />
-              <Tab label="Page 2" disableRipple to="/second" component={Link} />
-              <Tab label="Page 3" disableRipple to="/third" component={Link} />
+              <Tab label={firstLink} disableRipple to="/" component={Link} />
+              <Tab label={secondLink} disableRipple to="/second" component={Link} />
+              <Tab label={thirdLink} disableRipple to="/third" component={Link} />
             </Tabs>
           )}
         </Toolbar>
